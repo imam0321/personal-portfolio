@@ -1,10 +1,11 @@
+import Navbar from "./componenets/Navbar/Navbar"
 
 
 function App() {
 
   return (
     <>
-    
+    <Navbar/>
     </>
   )
 }
