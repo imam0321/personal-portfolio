@@ -7,12 +7,12 @@ const HomePage = () => {
   return (
     <div>
       <HomeProfile/>
-      <TopBanner />
+      {/* <TopBanner />
       <AboutMe />
       <Services />
       <MySkills />
       <Projects />
-      <ContactMe />
+      <ContactMe /> */}
     </div >
   );
 };

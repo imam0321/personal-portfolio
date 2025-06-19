@@ -13,9 +13,9 @@ const HomeProfile = () => {
           className="h-[250px] w-[250px] object-cover rounded-3xl md:ml-auto mx-auto"
         />
         <div className="flex flex-col justify-center items-center mt-8">
-          <h2 className="text-white  ">Ashik Bhuyan</h2>
+          <h2 className="text-white  ">Imam Hossain</h2>
           <h2 className="text-white  ">Software Engineer</h2>
-          <h2 className="text-white ">ashikbhuyan.swe.diu@gmail.com</h2>
+          <h2 className="text-white ">imam.hossain0321@gmail.com</h2>
           <h2 className="text-white mb-6">Dhaka, Bangladesh</h2>
         </div>
         <SocialLinks />

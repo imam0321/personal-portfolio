@@ -4,6 +4,7 @@ import Profile from "../pages/HomePage/Profile/Profile";
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import Footer from "../components/Footer/Footer";
+import MobileNav from "../components/Navbar/MobileNav";
 
 
 const Main = () => {
@@ -21,7 +22,7 @@ const Main = () => {
           <Navbar />
         </div>
         <div className='lg:hidden md:hidden block fixed bottom-3 left-10 right-10'>
-          {/* <MobileNav /> */}
+          <MobileNav />
         </div>
       </Suspense>
     </div>

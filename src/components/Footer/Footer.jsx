@@ -7,7 +7,7 @@ const Footer = () => {
       {/* <hr /> */}
       <div className="flex justify-between items-start mt-5 text-sm">
         <p className="w-1/2 text-accent">
-          Allrights reserved to &copy;Ashik Bhuyan
+          All rights reserved to &copy;Imam Hossain
         </p>
         <div className="w-1/2 flex justify-end gap-5">
           <Link
