@@ -43,7 +43,7 @@ const Navbar = () => {
   }
 
   return (
-    <section className="flex flex-col gap-4 sticky top-16">
+    <section className="flex flex-col gap-4 sticky top-10">
       {(path === 'blogs' ||
         path === 'dashboard' ||
         path === 'projects' ||

@@ -1,16 +1,13 @@
+import { Link } from "react-router-dom";
 import profile from "../../../assets/profile.jpg"
 import SocialLinks from "../../../components/SocialLinks";
 
 const Profile = () => {
   return (
-    <div className="lg:w-[380px] border-[1px] border-[#bbb] rounded-3xl px-6 py-10 sticky top-16">
-      {/* <div className="flex justify-between mb-6">
-        <h2 className="text-white text-4xl font-bold text-[#03C988]">Ashik</h2>
-        <h2 className="text-white leading-[20px]">Software Engineer</h2>
-      </div> */}
+    <div className="lg:w-[380px] border-[1px] border-[#bbb] rounded-3xl px-6 py-10 sticky top-10">
       <img
         src={profile}
-        alt=""
+        alt="profile"
         className="h-[250px] w-[250px] object-cover rounded-3xl mx-auto"
       />
       <div className="flex flex-col  items-center mt-8">
@@ -21,9 +18,9 @@ const Profile = () => {
 
         {/* SOCIAL MEDIA ICONS */}
         <SocialLinks />
-        <a href="#contact">
+        <Link to="#contact">
           <button className="btn btn-wide btn-primary mt-8">Hire Me</button>
-        </a>
+        </Link>
       </div>
     </div>
   );
