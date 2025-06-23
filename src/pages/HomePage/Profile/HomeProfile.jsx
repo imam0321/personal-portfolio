@@ -1,7 +1,6 @@
 
 import SocialLinks from '../../../components/SocialLinks';
 import profile from "../../../assets/profile.jpg"
-import { Link } from 'react-router-dom';
 
 const HomeProfile = () => {
   return (
@@ -19,9 +18,9 @@ const HomeProfile = () => {
           <h2 className="text-white mb-6">Dhaka, Bangladesh</h2>
         </div>
         <SocialLinks />
-        <Link to="#contact">
-          <button className="btn btn-wide btn-primary mt-8">Hire Me</button>
-        </Link>
+        <a href="#contact">
+          <button className="btn btn-wide btn-primary text-black mt-8">Hire Me</button>
+        </a>
       </div>
     </div>
   );

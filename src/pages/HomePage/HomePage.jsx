@@ -1,5 +1,6 @@
 import useTitle from "../../hooks/useTitle";
 import AboutMe from "./AboutMe/AboutMe";
+import ContactMe from "./ContactMe/ContactMe";
 import MySkills from "./MySkills/MySkills";
 import HomeProfile from "./Profile/HomeProfile";
 import Services from "./Services/Services";
@@ -16,7 +17,7 @@ const HomePage = () => {
       <Services />
       <MySkills />
       {/* <Projects /> */}
-      {/* <ContactMe /> */}
+      <ContactMe />
     </div >
   );
 };

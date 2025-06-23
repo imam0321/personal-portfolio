@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 
 const Footer = () => {
@@ -9,7 +9,7 @@ const Footer = () => {
         <p className="w-1/2 text-accent">
           All rights reserved to &copy;Imam Hossain
         </p>
-        <div className="w-1/2 flex justify-end gap-5">
+        {/* <div className="w-1/2 flex justify-end gap-5">
           <Link
             to="/login"
             className="hover:text-primary transition duration-300"
@@ -22,7 +22,7 @@ const Footer = () => {
           >
             Resource
           </Link>
-        </div>
+        </div> */}
       </div>
     </section>
   );

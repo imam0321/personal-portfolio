@@ -18,9 +18,9 @@ const Profile = () => {
 
         {/* SOCIAL MEDIA ICONS */}
         <SocialLinks />
-        <Link to="#contact" className="btn btn-wide btn-primary mt-8">
+        <a href="#contact" className="btn btn-wide btn-primary text-black mt-8">
           Hire Me
-        </Link>
+        </a>
       </div>
     </div>
   );
