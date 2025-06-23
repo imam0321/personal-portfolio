@@ -1,7 +1,7 @@
 import { HiOutlineCode } from "react-icons/hi";
 import SectionHead from "../../../components/Typography/SectionHead";
 import SectionTitle from "../../../components/Typography/SectionTitle";
-import { SiReact } from "react-icons/si";
+import { SiNextdotjs, SiReact } from "react-icons/si";
 import { FiCodesandbox } from "react-icons/fi";
 
 
@@ -14,8 +14,8 @@ const Services = () => {
     },
     {
       "id": 2,
-      "service": "React JS Development",
-      "details": "I have worked on 8 different React JS projects. Also have a little working experience with Next JS."
+      "service": "React & Next JS Development",
+      "details": "I have worked on 6 different React JS projects, and have hands-on experience with 4 projects using Next JS."
     },
     {
       "id": 3,
@@ -38,7 +38,7 @@ const Services = () => {
             data-aos-delay={`${((index) % 6) * 100 + 100}`}
           >
             {index === 0 && <HiOutlineCode className='text-[40px]' />}
-            {index === 1 && <SiReact className='text-[40px]' />}
+            {index === 1 && <div className="flex justify-between items-center"><SiReact className='text-[40px]' /> <SiNextdotjs className='text-[40px]' /></div>}
             {index === 2 && <FiCodesandbox className='text-[40px]' />}
             <div>
               <h2 className='lg:text-2xl md:text-2xl text-xl mt-3 lg:font-normal md:font-normal font-bold'>{service}</h2>
