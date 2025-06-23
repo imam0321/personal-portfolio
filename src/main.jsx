@@ -5,6 +5,9 @@ import { RouterProvider } from 'react-router-dom'
 import { routes } from './routes/Router.jsx'
 import './assets/styles/style.css'
 import './assets/styles/responsive.css'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+AOS.init();
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

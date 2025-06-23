@@ -1,6 +1,7 @@
 import useTitle from "../../hooks/useTitle";
 import AboutMe from "./AboutMe/AboutMe";
 import HomeProfile from "./Profile/HomeProfile";
+import Services from "./Services/Services";
 import TopBanner from "./TopBanner/TopBanner";
 
 
@@ -11,7 +12,7 @@ const HomePage = () => {
       <HomeProfile/>
       <TopBanner />
       <AboutMe />
-      {/* <Services /> */}
+      <Services />
       {/* <MySkills /> */}
       {/* <Projects /> */}
       {/* <ContactMe /> */}
