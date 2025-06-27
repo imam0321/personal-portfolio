@@ -8,7 +8,7 @@ const ProjectCard = ({ project, setModal, index }) => {
             data-aos="fade-up"
             data-aos-delay={`${((index) % 2) * 100 + 100}`}
         >
-            <img src={img} alt="" className='h-full w-full object-contain p-3' />
+            <img src={img} alt="" className='h-full w-full object-fill p-3 rounded-2xl' />
 
             <div className='project-card-content'>
                 <div className='m-7'>
