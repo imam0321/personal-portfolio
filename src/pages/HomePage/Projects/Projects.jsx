@@ -7,7 +7,41 @@ import ProjectCard from "../../../components/Cards/ProjectCard";
 
 const projects = [
   {
-    _id: "unique-id-123456",
+    "_id": "1",
+    "name": "PaySphere",
+    "description": "A full-stack digital wallet application implemented in TypeScript with secure, role-based access for Users, Agents, and Admins. Simulates real-world wallet operations similar to bKash or Nagad.",
+    "images": [
+      "https://i.ibb.co.com/2YWgjvLt/9.png",
+      "https://i.ibb.co.com/ZRCqvxq5/10.png"
+    ],
+    "features": [
+      "Secure role-based authentication for Users, Agents, and Admins.",
+      "Deposit, withdraw, send, and receive money functionality.",
+      "Transaction history management with real-time updates.",
+      "Responsive design for mobile and desktop devices.",
+      "Scalable backend APIs for financial operations."
+    ],
+    "duration": "29 Jul, 2025 – Development Completed",
+    "technologies": [
+      "React.js",
+      "TypeScript",
+      "Redux Toolkit",
+      "RTK Query",
+      "Shadcn UI",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT"
+    ],
+    "client": "https://github.com/imam0321/paysphere-client",
+    "server": "https://github.com/imam0321/PaySphere-server",
+    "liveLink": "https://paysphere-client.vercel.app/",
+    "img": "https://i.ibb.co.com/2YWgjvLt/9.png"
+  },
+
+  {
+    _id: "2",
     name: "Special Surprise - Gift Store",
     description:
       "A sleek and responsive e-commerce application for buying and gifting surprise items. Features user-friendly navigation, product filtering, and a smooth checkout experience.",
@@ -36,7 +70,7 @@ const projects = [
     img: "https://i.ibb.co/vxwyXJ7r/sp-cover-img.jpg"
   },
   {
-    _id: "6431e0df5a895e0e9b327c22",
+    _id: "3",
     name: "Attendance & Clock Time Management System",
     description:
       "A responsive web app for managing employee attendance with real-time clock in/out tracking. Integrates Google Maps-based location control and secure authentication.",
@@ -74,7 +108,6 @@ const projects = [
     img: "https://i.ibb.co/RpRPCNwF/RL.jpg",
   },
 ];
-
 const Projects = () => {
   const [modal, setModal] = useState([]);
 

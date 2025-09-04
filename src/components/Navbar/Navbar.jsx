@@ -78,7 +78,7 @@ const Navbar = () => {
         </div>
         <div className="px-3 py-2 border-[1px] border-accent rounded-full">
           <a
-            href="https://drive.google.com/file/d/1qLJNWvkWWdbGPYhoSKXTXjhL0mLNikFZ/view"
+            href="https://drive.google.com/file/d/1PgU-9d_bq4s2LkitlFJMYnMy5Y2RXC3h/view"
             target="_blank"
             rel="noreferrer"
             className="icon"
@@ -93,16 +93,7 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div className="px-3 py-2 border-[1px] border-accent rounded-full">
-          <Link to="/blogs" className="icon" data-title="Blogs">
-            <lord-icon
-              src="https://cdn.lordicon.com/vufjamqa.json"
-              trigger="hover"
-              class="current-color"
-              style={{ width: '24px', height: '24px', paddingTop: '2px' }}
-            ></lord-icon>
-          </Link>
-        </div>
+       
     </section>
   );
 };
