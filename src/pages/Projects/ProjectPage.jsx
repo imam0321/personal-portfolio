@@ -8,6 +8,47 @@ import useTitle from "../../hooks/useTitle";
 const projects = [
   {
     "_id": "1",
+    "name": "Tour Matrix",
+    "description": "A full-stack travel and tour booking platform built with TypeScript. Provides secure, role-based dashboards for Users, Guides, Admins, and Super Admins, allowing seamless tour browsing, bookings, and payments.",
+    "images": [
+      "https://i.ibb.co.com/XxvhWvF3/3.png",
+      "https://i.ibb.co.com/BVPcnHkc/4.png",
+      "https://i.ibb.co.com/Wv1HpG8M/5.png"
+    ],
+    "features": [
+      "Secure role-based authentication for Users, Guides, Admins, and Super Admins.",
+      "Browse, search, and book tours with detailed information.",
+      "Admin dashboard to manage users, guides, bookings, and payments.",
+      "OTP verification, Forget Password, social login support.",
+      "Responsive design for mobile and desktop devices.",
+      "Seamless integration with backend APIs and payment gateway (SSLCommerz)."
+    ],
+    "duration": "8 Jul, 2025 – Development Completed",
+    "technologies": [
+      "React.js",
+      "TypeScript",
+      "Redux Toolkit",
+      "RTK Query",
+      "Shadcn UI",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Passport.js",
+      "Cloudinary",
+      "nodemailer", 
+      "Redis",
+      "SSLCommerz"
+    ],
+    "client": "https://github.com/imam0321/tour-matrix-client",
+    "server": "https://github.com/imam0321/tour-matrix-server",
+    "liveLink": "https://tour-matrix.vercel.app/",
+    "img": "https://i.ibb.co.com/ZRNTS91W/2.png"
+  },
+
+  {
+    "_id": "2",
     "name": "PaySphere",
     "description": "A full-stack digital wallet application implemented in TypeScript with secure, role-based access for Users, Agents, and Admins. Simulates real-world wallet operations similar to bKash or Nagad.",
     "images": [
@@ -37,11 +78,11 @@ const projects = [
     "client": "https://github.com/imam0321/paysphere-client",
     "server": "https://github.com/imam0321/PaySphere-server",
     "liveLink": "https://paysphere-client.vercel.app/",
-    "img": "https://i.ibb.co.com/2YWgjvLt/9.png"
+    "img": "https://i.ibb.co.com/SDHwNpfB/8.png"
   },
 
   {
-    _id: "2",
+    _id: "3",
     name: "Special Surprise - Gift Store",
     description:
       "A sleek and responsive e-commerce application for buying and gifting surprise items. Features user-friendly navigation, product filtering, and a smooth checkout experience.",
@@ -70,7 +111,7 @@ const projects = [
     img: "https://i.ibb.co/vxwyXJ7r/sp-cover-img.jpg"
   },
   {
-    _id: "3",
+    _id: "4",
     name: "Attendance & Clock Time Management System",
     description:
       "A responsive web app for managing employee attendance with real-time clock in/out tracking. Integrates Google Maps-based location control and secure authentication.",
