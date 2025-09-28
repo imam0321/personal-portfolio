@@ -78,7 +78,7 @@ const Navbar = () => {
         </div>
         <div className="px-3 py-2 border-[1px] border-accent rounded-full">
           <a
-            href="https://drive.google.com/file/d/1PgU-9d_bq4s2LkitlFJMYnMy5Y2RXC3h/view"
+            href="https://drive.google.com/file/d/1-rI2m1DEDKjFacnEea25YRQqkvvCT_CC/view"
             target="_blank"
             rel="noreferrer"
             className="icon"
