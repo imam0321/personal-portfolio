@@ -8,7 +8,7 @@ import ProjectCard from "../../../components/Cards/ProjectCard";
 const projects = [
   {
   "_id": "1",
-  "name": "Special Surprise – Full-Stack Gift Marketplace Platform",
+  "name": "Special Surprise",
   "description": "Special Surprise is a full-stack gift marketplace platform designed to make buying and delivering gifts simple, smooth, and reliable. Users can explore gift categories, schedule delivery, place orders, and make secure online payments, while Admins and Moderators manage products, users, and delivery workflows through dedicated dashboards.",
   "images": [
     "https://i.ibb.co.com/BVKpYLKG/download.png",
