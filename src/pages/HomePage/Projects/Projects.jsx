@@ -7,7 +7,43 @@ import ProjectCard from "../../../components/Cards/ProjectCard";
 
 const projects = [
   {
-    "_id": "1",
+  "_id": "1",
+  "name": "Special Surprise – Full-Stack Gift Marketplace Platform",
+  "description": "Special Surprise is a full-stack gift marketplace platform designed to make buying and delivering gifts simple, smooth, and reliable. Users can explore gift categories, schedule delivery, place orders, and make secure online payments, while Admins and Moderators manage products, users, and delivery workflows through dedicated dashboards.",
+  "images": [
+    "https://i.ibb.co.com/BVKpYLKG/download.png",
+    "https://i.ibb.co.com/Pz96rGqt/3.png",
+  ],
+  "features": [
+    "Role-based dashboards for Customer, Moderator, and Admin",
+    "Gift categories including Birthday, Anniversary, Valentine’s Day, Mother’s Day & more",
+    "Delivery scheduling & order tracking flow",
+    "Secure authentication & authorization using JWT",
+    "Online payment integration with SSLCommerz",
+    "Responsive and clean UI for users and admin panels"
+  ],
+  "duration": "Nov 2025 – Jan 2026",
+  "technologies": [
+    "Next.js 16",
+    "TypeScript",
+    "Tailwind CSS",
+    "Shadcn UI",
+    "Node.js",
+    "Express.js",
+    "Prisma",
+    "PostgreSQL",
+    "JWT Authentication",
+    "Zod Validation",
+    "Cloudinary",
+    "Nodemailer"
+  ],
+  "client": "https://github.com/imam0321/special-surprise-client",
+  "server": "https://github.com/imam0321/special-surprise-server",
+  "liveLink": "https://special-surprise-client.vercel.app",
+  "img": "https://i.ibb.co.com/BVKpYLKG/download.png"
+},
+  {
+    "_id": "2",
     "name": "Tour Matrix",
     "description": "A full-stack travel and tour booking platform built with TypeScript. Provides secure, role-based dashboards for Users, Guides, Admins, and Super Admins, allowing seamless tour browsing, bookings, and payments.",
     "images": [
@@ -47,7 +83,7 @@ const projects = [
     "img": "https://i.ibb.co.com/ZRNTS91W/2.png"
   },
   {
-    "_id": "2",
+    "_id": "3",
     "name": "PaySphere",
     "description": "A full-stack digital wallet application implemented in TypeScript with secure, role-based access for Users, Agents, and Admins. Simulates real-world wallet operations similar to bKash or Nagad.",
     "images": [
@@ -78,36 +114,6 @@ const projects = [
     "server": "https://github.com/imam0321/PaySphere-server",
     "liveLink": "https://paysphere-client.vercel.app/",
     "img": "https://i.ibb.co.com/SDHwNpfB/8.png"
-  },
-
-  {
-    _id: "3",
-    name: "Special Surprise - Gift Store",
-    description:
-      "A sleek and responsive e-commerce application for buying and gifting surprise items. Features user-friendly navigation, product filtering, and a smooth checkout experience.",
-    images: [
-      "https://i.ibb.co/TxDZxfvy/sp-cover-img-1.jpg",
-      "https://i.ibb.co/Vcpz2R3Z/sp-cover-img-2.jpg"
-    ],
-    features: [
-      "Browse and purchase surprise gift items with ease.",
-      "Product filtering, search, and category browsing.",
-      "Add to cart and checkout functionality with validation.",
-      "User authentication with email and Google login.",
-      "Order history and confirmation system.",
-      "Responsive design for mobile and desktop devices.",
-      "Built with modern frontend stack and dynamic routing."
-    ],
-    duration: "06 May, 2025 – Development Running",
-    technologies: [
-      "Next JS",
-      "Tailwind CSS",
-      "shadcn ui",
-    ],
-    client: "https://github.com/imam0321/special-surprise",
-    server: "",
-    liveLink: "https://special-surprise-eight.vercel.app/",
-    img: "https://i.ibb.co/vxwyXJ7r/sp-cover-img.jpg"
   },
   {
     _id: "4",
