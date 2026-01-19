@@ -40,45 +40,41 @@ const Navbar = () => {
           </Link>
         </div>
       )}
-      <div className="flex flex-col gap-2 py-3 px-2 glass-card rounded-full border-white/5 shadow-2xl bg-gradient-to-br from-neutral-900/95 via-neutral-900/85 to-neutral-900/75">
-        {navItems?.map(({ icon, link, name }, index) => (
+      <div className="flex flex-col gap-3 py-6 px-3 border-[1px] border-accent rounded-full">
+        {navItems?.map(({ icon, link }, index) => (
           <a
             key={index}
             href={link}
-            onClick={(e) => scrollToSection(e, link)}
-            className="group relative flex items-center justify-center p-2.5 rounded-full hover:bg-white/5 transition-all duration-300"
-            aria-label={`Scroll to ${name}`}
-            data-title={name}
+            className="icon"
+            data-title={link?.split('#')[1]}
           >
             <lord-icon
               src={icon}
               trigger="hover"
-              colors={`primary:${location.hash === link ? '#03c988' : '#94a3b8'}`}
-              style={{ width: '28px', height: '28px' }}
+              class="current-color"
+              style={{ width: '24px', height: '24px' }}
             ></lord-icon>
-            <span className="absolute left-full ml-4 px-3 py-1 bg-neutral-900 text-white text-[10px] font-bold rounded-lg opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none whitespace-nowrap tracking-widest uppercase border border-white/5 shadow-2xl">
-              {name}
-            </span>
           </a>
         ))}
       </div>
-      <div className="p-3 glass-card rounded-full border-white/5 shadow-2xl bg-gradient-to-br from-neutral-900/90 to-neutral-900/70">
+      <div className="px-3 py-2 border-[1px] border-accent rounded-full">
         <a
-          href="https://drive.google.com/file/d/1VszwNGsnDK0jKSZl5nOj5OmanMo_lbBd/view"
+          href="https://drive.google.com/file/d/1-rI2m1DEDKjFacnEea25YRQqkvvCT_CC/view"
           target="_blank"
           rel="noreferrer"
-          className="group flex justify-center"
-          aria-label="Download Resume"
+          className="icon"
           data-title="Resume"
         >
           <lord-icon
             src="https://cdn.lordicon.com/winbdcbm.json"
             trigger="hover"
-            colors="primary:#94a3b8"
-            style={{ width: '28px', height: '28px', paddingTop: '2px' }}
+            class="current-color"
+            style={{ width: '24px', height: '24px', paddingTop: '2px' }}
           ></lord-icon>
         </a>
       </div>
+
+
     </section>
   );
 };

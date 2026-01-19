@@ -10,42 +10,39 @@ const MobileNav = () => {
   ];
 
   return (
-    <div className="flex flex-row justify-between items-center py-5 px-8 glass-card rounded-full border-white/5 shadow-2xl backdrop-blur-3xl bg-gradient-to-br from-neutral-900/95 to-neutral-800/80">
-      {items.map((item, index) => (
-        item.external ? (
-          <a
-            key={index}
-            href={item.link}
-            target="_blank"
-            rel="noreferrer"
-            className="group flex flex-col items-center gap-1.5 transition-all duration-300 hover:text-primary"
-            aria-label={item.name}
-          >
-            <lord-icon
-              src={item.icon}
-              trigger="hover"
-              colors="primary:#94a3b8"
-              style={{ width: '22px', height: '22px' }}
-            ></lord-icon>
-            <span className="text-[8px] uppercase font-bold tracking-[0.2em] text-accent group-hover:text-primary transition-colors">{item.name}</span>
-          </a>
-        ) : (
-          <Link
-            key={index}
-            to={item.link}
-            className="group flex flex-col items-center gap-1.5 transition-all duration-300 hover:text-primary"
-            aria-label={item.name}
-          >
-            <lord-icon
-              src={item.icon}
-              trigger="hover"
-              colors="primary:#94a3b8"
-              style={{ width: '22px', height: '22px' }}
-            ></lord-icon>
-            <span className="text-[8px] uppercase font-bold tracking-[0.2em] text-accent group-hover:text-primary transition-colors">{item.name}</span>
-          </Link>
-        )
-      ))}
+    <div className="flex flex-row justify-between py-3 px-9 bg-base-100 border-[1px] border-[#bbb] rounded-full">
+      <Link to="/" className="icon flex flex-col items-center gap-1">
+        <lord-icon
+          src="https://cdn.lordicon.com/osuxyevn.json"
+          trigger="hover"
+          className="current-color"
+          style={{ width: '24px', height: '24px' }}
+        ></lord-icon>
+        <span className="text-xs">Home</span>
+      </Link>
+      <a
+        href="https://drive.google.com/file/d/1-rI2m1DEDKjFacnEea25YRQqkvvCT_CC/view"
+        target="_blank"
+        rel="noreferrer"
+        className="icon flex flex-col items-center gap-1"
+      >
+        <lord-icon
+          src="https://cdn.lordicon.com/winbdcbm.json"
+          trigger="hover"
+          className="current-color"
+          style={{ width: '24px', height: '24px' }}
+        ></lord-icon>
+        <span className="text-xs">Resume</span>
+      </a>
+      <Link to="/projects" className="icon flex flex-col items-center gap-1">
+        <lord-icon
+          src="https://cdn.lordicon.com/fpmskzsv.json"
+          trigger="hover"
+          className="current-color"
+          style={{ width: '24px', height: '24px' }}
+        ></lord-icon>
+        <span className="text-xs">Projects</span>
+      </Link>
     </div>
   );
 };
