@@ -1,6 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
 
-
 const Navbar = () => {
   const location = useLocation();
   const path = location?.pathname?.split('/')[1];
@@ -27,55 +26,64 @@ const Navbar = () => {
   };
 
   return (
-    <section className="h-full flex flex-col gap-1 z-30">
+    <nav className="h-full flex flex-col gap-3 z-30">
+      {/* ===== BACK TO HOME BUTTON ===== */}
       {(path === 'blogs' || path === 'dashboard' || path === 'projects' || path === 'resource') && (
-        <div className="p-2 glass-card rounded-full border-white/5 shadow-2xl bg-gradient-to-br from-neutral-900/90 to-neutral-900/70">
-          <Link to="/" className="group" aria-label="Back to Homepage">
+        <div className="p-2 glass-card rounded-full border border-white/10 shadow-2xl bg-gradient-to-br from-neutral-900/90 to-neutral-900/70 mb-4">
+          <Link to="/" aria-label="Back to Homepage" className="group">
             <lord-icon
               src="https://cdn.lordicon.com/osuxyevn.json"
               trigger="hover"
               colors="primary:#03c988"
-              style={{ width: '28px', height: '28px', paddingTop: '2px' }}
+              style={{ width: '28px', height: '28px' }}
             ></lord-icon>
           </Link>
         </div>
       )}
-      <div className="flex flex-col gap-3 py-6 px-3 border-[1px] border-accent rounded-full">
-        {navItems?.map(({ icon, link }, index) => (
+
+      {/* ===== NAV ITEMS ===== */}
+      <div className="flex flex-col gap-3 py-6 pl-3 pr-1 border border-accent rounded-full">
+        {navItems.map(({ icon, link, name }, index) => (
           <a
             key={index}
             href={link}
-            className="icon"
-            data-title={link?.split('#')[1]}
+            className="icon relative group w-12 h-12 flex items-center justify-center rounded-lg transition-all duration-300 hover:bg-white/10"
+            onClick={(e) => scrollToSection(e, link)}
           >
             <lord-icon
               src={icon}
               trigger="hover"
-              class="current-color"
+              className="current-color"
               style={{ width: '24px', height: '24px' }}
             ></lord-icon>
+            {/* TOOLTIP */}
+            <span className="absolute -top-8 left-1/2 -translate-x-1/2 text-xs text-white bg-black/70 px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none">
+              {name}
+            </span>
           </a>
         ))}
       </div>
-      <div className="px-3 py-2 border-[1px] border-accent rounded-full">
+
+      {/* ===== RESUME BUTTON ===== */}
+      <div className="px-3 py-2 border border-accent rounded-full mt-4">
         <a
-          href="https://drive.google.com/file/d/1-rI2m1DEDKjFacnEea25YRQqkvvCT_CC/view"
+          href="https://drive.google.com/file/d/1VszwNGsnDK0jKSZl5nOj5OmanMo_lbBd/view"
           target="_blank"
           rel="noreferrer"
-          className="icon"
-          data-title="Resume"
+          className="icon relative group w-12 h-12 flex items-center justify-center rounded-lg transition-all duration-300 hover:bg-white/10"
         >
           <lord-icon
             src="https://cdn.lordicon.com/winbdcbm.json"
             trigger="hover"
-            class="current-color"
-            style={{ width: '24px', height: '24px', paddingTop: '2px' }}
+            className="current-color"
+            style={{ width: '24px', height: '24px' }}
           ></lord-icon>
+          <span className="absolute -top-8 left-1/2 -translate-x-1/2 text-xs text-white bg-black/70 px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-all duration-300 pointer-events-none">
+            Resume
+          </span>
         </a>
       </div>
-
-
-    </section>
+    </nav>
   );
 };
 

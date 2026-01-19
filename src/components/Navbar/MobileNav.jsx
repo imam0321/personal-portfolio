@@ -2,13 +2,6 @@ import { Link } from "react-router-dom";
 
 
 const MobileNav = () => {
-  const items = [
-    { name: 'Home', icon: 'https://cdn.lordicon.com/osuxyevn.json', link: '/#home' },
-    { name: 'Experience', icon: 'https://cdn.lordicon.com/nocovwne.json', link: '/#experience' },
-    { name: 'Resume', icon: 'https://cdn.lordicon.com/winbdcbm.json', link: 'https://drive.google.com/file/d/1VszwNGsnDK0jKSZl5nOj5OmanMo_lbBd/view', external: true },
-    { name: 'Projects', icon: 'https://cdn.lordicon.com/fpmskzsv.json', link: '/#projects' },
-  ];
-
   return (
     <div className="flex flex-row justify-between py-3 px-9 bg-base-100 border-[1px] border-[#bbb] rounded-full">
       <Link to="/" className="icon flex flex-col items-center gap-1">
@@ -21,7 +14,7 @@ const MobileNav = () => {
         <span className="text-xs">Home</span>
       </Link>
       <a
-        href="https://drive.google.com/file/d/1-rI2m1DEDKjFacnEea25YRQqkvvCT_CC/view"
+        href="https://drive.google.com/file/d/1VszwNGsnDK0jKSZl5nOj5OmanMo_lbBd/view"
         target="_blank"
         rel="noreferrer"
         className="icon flex flex-col items-center gap-1"
