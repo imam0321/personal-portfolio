@@ -10,6 +10,7 @@ const SocialLinks = () => {
         rel="noreferrer"
         to="https://github.com/imam0321/"
         className="border-[1px] border-white p-[12px] rounded-full hover:border-primary hover:text-primary transition duration-300"
+        aria-label="GitHub Profile"
       >
         <GrGithub />
       </Link>
@@ -18,6 +19,7 @@ const SocialLinks = () => {
         rel="noreferrer"
         href="https://www.linkedin.com/in/imam-hossain-691619196/"
         className="border-[1px] border-white p-[12px] rounded-full hover:border-primary hover:text-primary transition duration-300"
+        aria-label="LinkedIn Profile"
       >
         <GrLinkedinOption />
       </a>
@@ -26,6 +28,7 @@ const SocialLinks = () => {
         rel="noreferrer"
         href="https://www.facebook.com/imam0321/"
         className="border-[1px] border-white p-[12px] rounded-full hover:border-primary hover:text-primary transition duration-300"
+        aria-label="Facebook Profile"
       >
         <GrFacebookOption />
       </a>
@@ -34,6 +37,7 @@ const SocialLinks = () => {
         rel="noreferrer"
         href="https://wa.me/8801857737810/"
         className="border-[1px] border-white p-[12px] rounded-full hover:border-primary hover:text-primary transition duration-300"
+        aria-label="Contact on WhatsApp"
       >
         <FaWhatsapp />
       </a>

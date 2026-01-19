@@ -1,6 +1,7 @@
 import useTitle from "../../hooks/useTitle";
 import AboutMe from "./AboutMe/AboutMe";
 import ContactMe from "./ContactMe/ContactMe";
+import Experience from "./Experience/Experience";
 import MySkills from "./MySkills/MySkills";
 import HomeProfile from "./Profile/HomeProfile";
 import Projects from "./Projects/Projects";
@@ -12,9 +13,10 @@ const HomePage = () => {
   useTitle('Portfolio')
   return (
     <div>
-      <HomeProfile/>
+      <HomeProfile />
       <TopBanner />
       <AboutMe />
+      <Experience />
       <Services />
       <MySkills />
       <Projects />

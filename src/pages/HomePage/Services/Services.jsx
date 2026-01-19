@@ -28,21 +28,25 @@ const Services = () => {
     <section id="services" className='mb-32'>
       <SectionTitle props={props} />
       <SectionHead>
-        My <span className='text-primary'>Specializations</span>
+        My <span className='text-primary font-extrabold tracking-tight'>Specializations</span>
       </SectionHead>
-      <div className='services'>
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4'>
         {
           services.map(({ service, details }, index) => <div key={index}
-            className='hover:text-primary hover:border-primary border-[1px] border-accent p-6 rounded-2xl'
+            className='group glass-card p-4 rounded-3xl transition-all duration-500 hover:border-primary/50 bg-gradient-to-br from-neutral-900/90 via-neutral-900/80 to-neutral-900/70 border-white/5 shadow-2xl hover:shadow-[0_0_40px_rgba(3,201,136,0.1)]'
             data-aos="fade-up"
-            data-aos-delay={`${((index) % 6) * 100 + 100}`}
+            data-aos-delay={`${((index) % 6) * 100}`}
           >
-            {index === 0 && <HiOutlineCode className='text-[40px]' />}
-            {index === 1 && <div className="flex justify-between items-center"><SiReact className='text-[40px]' /> <SiNextdotjs className='text-[40px]' /></div>}
-            {index === 2 && <FiCodesandbox className='text-[40px]' />}
-            <div>
-              <h2 className='lg:text-2xl md:text-2xl text-xl mt-3 lg:font-normal md:font-normal font-bold'>{service}</h2>
-              <p className='text-accent mt-3 text-sm'>{details}</p>
+            <div className="mb-10 text-primary group-hover:scale-110 transition-transform duration-500 flex justify-center">
+              <div className="p-4 glass-card rounded-2xl bg-white/5 border-white/5">
+                {index === 0 && <HiOutlineCode size={40} />}
+                {index === 1 && <div className="flex gap-4"><SiReact size={40} /> <SiNextdotjs size={40} /></div>}
+                {index === 2 && <FiCodesandbox size={40} />}
+              </div>
+            </div>
+            <div className="relative pl-6 border-l-2 border-primary/40">
+              <h2 className='text-xl font-bold text-white mb-4 tracking-tight group-hover:text-primary transition-colors duration-300'>{service}</h2>
+              <p className='text-accent text-sm leading-relaxed font-medium opacity-80'>{details}</p>
             </div>
           </div>
           )

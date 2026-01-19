@@ -4,14 +4,68 @@
 :root {
   --color-primary: #03c988;
   --color-secondary: #f6d860;
-  --color-accent: #bbb;
-  --color-neutral: #fff;
-  --color-base-100: #1f1f1f;
+  --color-accent: #94a3b8;
+  --color-neutral: #f8fafc;
+  --color-base-100: #0a0a0a;
+  --glass-bg: rgba(23, 23, 23, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.08);
 }
 
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
-  background-color: #0e0c15;
-  color: #fff;
+  font-family: "Outfit", "Inter", sans-serif;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  background-image:
+    radial-gradient(at 0% 0%, rgba(3, 201, 136, 0.04) 0, transparent 40%),
+    radial-gradient(at 100% 100%, rgba(3, 201, 136, 0.02) 0, transparent 40%);
+  background-attachment: fixed;
+}
+
+@layer components {
+  .glass-card {
+    background: linear-gradient(135deg, rgba(23, 23, 23, 0.95), rgba(23, 23, 23, 0.75));
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.5);
+    border-radius: 1.5rem;
+    /* Standard rounded-3xl equivalent */
+  }
+
+  .text-gradient {
+    background: linear-gradient(to right, #03c988, #22ce98);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* Hide scrollbar globally but allow scrolling */
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  scroll-behavior: smooth;
+}
+
+/* Fix for react-photo-view and DaisyUI Modal interactions */
+.PhotoView-Portal,
+.react-photo-view-overlay,
+.PhotoView__Canvas {
+  z-index: 10000 !important;
+}
+
+.modal {
+  z-index: 1000 !important;
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
 }

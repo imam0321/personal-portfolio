@@ -9,38 +9,40 @@ const AboutMe = () => {
     text: 'About Me',
   };
   return (
-    <section id="about" className="mb-16">
+    <section id="about" className="mb-24">
       <SectionTitle props={props} />
       <SectionHead>
-        Every great design start with even a{' '}
-        <span className="text-primary">better story</span>
+        Every great design starts with an even{' '}
+        <span className="text-primary font-extrabold tracking-tight">better story</span>
       </SectionHead>
 
-      <p className="text-accent max-w-[800px]">
-        I started web programming out of self interest and found out I enjoy
-        designing and developing web application. It gives me the enlightenment
-        of creating something that I can own. For more than 1 year I have been
-        learning web development. I have excelled in frontend development
-        technology and then backend as well. I have worked on 12 different
-        projects of my own.
-      </p>
-      <div className="flex">
-        <Link
-          to="https://drive.google.com/file/d/1-rI2m1DEDKjFacnEea25YRQqkvvCT_CC/view"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <button className="hover:text-primary transition duration-300 text-lg flex gap-2 items-center uppercase icon mt-10">
-            <lord-icon
-              target="button"
-              src="https://cdn.lordicon.com/egiwmiit.json"
-              trigger="hover"
-              class="current-color"
-              style={{ width: '24px', height: '24px' }}
-            ></lord-icon>
-            Get my CV
-          </button>
-        </Link>
+      <div className="flex flex-col lg:flex-row gap-12 items-start mt-10">
+        <div className="flex-1 space-y-8 relative pl-8 border-l-2 border-primary/40">
+          <p className="text-accent text-base md:text-lg leading-relaxed max-w-[800px] font-medium opacity-80">
+            I started web programming out of self-interest and quickly discovered a passion for building elegant digital experiences. There's a certain magic in turning a blank screen into a functional, user-centric application.
+          </p>
+          <p className="text-accent text-base md:text-lg leading-relaxed max-w-[800px] font-medium opacity-80">
+            Over the past year, I've dedicated myself to mastering the modern web stack. From crafting pixel-perfect frontends to architecting robust backends, I've completed over 20 diverse projects, each teaching me something new about scalability and user experience.
+          </p>
+          <div className="flex pt-4">
+            <Link
+              to="https://drive.google.com/file/d/1VszwNGsnDK0jKSZl5nOj5OmanMo_lbBd/view"
+              target="_blank"
+              rel="noreferrer"
+              className="group"
+            >
+              <button className="flex items-center gap-4 py-4 px-10 glass-card rounded-2xl border-white/5 bg-gradient-to-br from-neutral-900/90 to-neutral-900/70 hover:border-primary/50 transition-all duration-300 text-white font-bold uppercase tracking-widest text-xs shadow-2xl">
+                <lord-icon
+                  src="https://cdn.lordicon.com/egiwmiit.json"
+                  trigger="hover"
+                  colors="primary:#03c988"
+                  style={{ width: '24px', height: '24px' }}
+                ></lord-icon>
+                View My Resume
+              </button>
+            </Link>
+          </div>
+        </div>
       </div>
     </section>
   );
