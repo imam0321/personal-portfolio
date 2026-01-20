@@ -26,7 +26,7 @@ const AboutMe = () => {
           </p>
           <div className="flex pt-4">
             <Link
-              to="https://drive.google.com/file/d/1VszwNGsnDK0jKSZl5nOj5OmanMo_lbBd/view"
+              to="https://drive.google.com/file/d/1R8uxEwoUpp2xo_Wecc5lRSuKuPs6se3K/view"
               target="_blank"
               rel="noreferrer"
               className="group"

@@ -67,7 +67,7 @@ const Navbar = () => {
       {/* ===== RESUME BUTTON ===== */}
       <div className="px-3 py-2 border border-accent rounded-full mt-4">
         <a
-          href="https://drive.google.com/file/d/1VszwNGsnDK0jKSZl5nOj5OmanMo_lbBd/view"
+          href="https://drive.google.com/file/d/1R8uxEwoUpp2xo_Wecc5lRSuKuPs6se3K/view"
           target="_blank"
           rel="noreferrer"
           className="icon relative group w-12 h-12 flex items-center justify-center rounded-lg transition-all duration-300 hover:bg-white/10"
